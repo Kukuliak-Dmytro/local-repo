@@ -1,0 +1,19 @@
+.list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    .list-item{
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.25);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}

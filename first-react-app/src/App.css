@@ -35,6 +35,27 @@
 
 .card {
   padding: 2em;
+  display: flex;;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .counter{
+    display: flex;
+    height: 50px;
+    padding-bottom: 20px;
+    gap: 8px;
+    p{
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 8px 16px;
+      cursor: pointer;
+      margin: 0;
+    }
+  }
 }
 
 .read-the-docs {
