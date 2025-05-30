@@ -5,6 +5,8 @@ import './App.css'
 import Button from './components/ui/Button/Button'
 import { List } from './components/ui/List/List'
 import Modal from './components/layout/Modal/Modal'
+import ModalText from './components/layout/Modal/ModalText'
+import ModalConfirm from './components/layout/Modal/ModalConfirm'
 function App() {
   const [count, setCount] = useState(0)
   const [isOpen, setIsOpen] = useState(false);
@@ -34,15 +36,23 @@ function App() {
   ]
 
 
-  const decrement = (amount) =>{
-    setCount((count)=>{return count-amount})
+  const decrement = (amount) => {
+    setCount((count) => { return count - amount })
   }
   const reset = () => {
     setCount(0);
   }
   const increment = (amount) => {
     setCount((count) => count + amount);
-    
+
+  }
+  const confirm = () => {
+    console.log("Confirmed!");
+    setIsOpen(false);
+  }
+  const decline = () => {
+    console.log("Declined!");
+    setIsOpen(false);
   }
 
   return (
@@ -58,18 +68,21 @@ function App() {
       <h1>Vite + React</h1>
       <div className="card">
         <div className="counter">
-          <Button onClick={()=>{decrement(1)}}>-1</Button>
-          <Button onClick={()=>{decrement(5)}}>-5</Button>
+          <Button onClick={() => { decrement(1) }}>-1</Button>
+          <Button onClick={() => { decrement(5) }}>-5</Button>
           <p onClick={reset} >{count}</p>
-          <Button onClick={()=>{increment(5)}}>+1</Button>
-          <Button onClick={()=>{increment(5)}}>+5</Button>
-          
+          <Button onClick={() => { increment(5) }}>+1</Button>
+          <Button onClick={() => { increment(5) }}>+5</Button>
+
         </div>
         <Button onClick={toggleModal}>Open Modal</Button>
-        
+
         <List objectList={objectList}></List>
-      </div>  
-      <Modal opened={isOpen} toggleModal={toggleModal}></Modal>
+      </div>
+      <Modal opened={isOpen} toggleModal={toggleModal}>
+        <ModalConfirm yes={confirm} decline={decline}></ModalConfirm>
+      {/* <ModalText></ModalText> */}
+      </Modal>
     </>
   )
 }
