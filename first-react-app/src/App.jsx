@@ -4,8 +4,13 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Button from './components/ui/Button/Button'
 import { List } from './components/ui/List/List'
+import Modal from './components/layout/Modal/Modal'
 function App() {
   const [count, setCount] = useState(0)
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleModal = () => {
+    setIsOpen(!isOpen);
+  }
 
   let objectList = [
     {
@@ -37,6 +42,7 @@ function App() {
   }
   const increment = (amount) => {
     setCount((count) => count + amount);
+    
   }
 
   return (
@@ -54,14 +60,16 @@ function App() {
         <div className="counter">
           <Button onClick={()=>{decrement(1)}}>-1</Button>
           <Button onClick={()=>{decrement(5)}}>-5</Button>
-          <p onClick={reset}>{count}</p>
+          <p onClick={reset} >{count}</p>
           <Button onClick={()=>{increment(5)}}>+1</Button>
           <Button onClick={()=>{increment(5)}}>+5</Button>
           
         </div>
+        <Button onClick={toggleModal}>Open Modal</Button>
         
         <List objectList={objectList}></List>
       </div>  
+      <Modal opened={isOpen} toggleModal={toggleModal}></Modal>
     </>
   )
 }
