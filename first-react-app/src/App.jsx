@@ -7,6 +7,7 @@ import { List } from './components/ui/List/List'
 import Modal from './components/layout/Modal/Modal'
 import ModalText from './components/layout/Modal/ModalText'
 import ModalConfirm from './components/layout/Modal/ModalConfirm'
+import Semafor from './components/traffic/Sepafor/Semafor'
 function App() {
   const [count, setCount] = useState(0)
   const [isOpen, setIsOpen] = useState(false);
@@ -83,6 +84,8 @@ function App() {
         <ModalConfirm yes={confirm} decline={decline}></ModalConfirm>
       {/* <ModalText></ModalText> */}
       </Modal>
+
+      <Semafor></Semafor>
     </>
   )
 }

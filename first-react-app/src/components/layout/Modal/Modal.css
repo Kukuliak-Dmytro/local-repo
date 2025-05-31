@@ -2,7 +2,7 @@
     background-color: #242424;
     border: 1px solid white;
     border-radius: 6px;
-    position: absolute;
+    position: fixed;
     width: 400px;
     left: 50%;
     top: 50%;
@@ -37,7 +37,7 @@
 
 }
 #overlay{
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width: 100%;
