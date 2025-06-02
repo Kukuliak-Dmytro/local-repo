@@ -8,14 +8,19 @@ import Modal from './components/layout/Modal/Modal'
 import ModalText from './components/layout/Modal/ModalText'
 import ModalConfirm from './components/layout/Modal/ModalConfirm'
 import Semafor from './components/traffic/Sepafor/Semafor'
+import Input from './components/ui/Input/Input'
 function App() {
   const [count, setCount] = useState(0)
   const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => {
     setIsOpen(!isOpen);
   }
-
-  let objectList = [
+  const [formData, setFormData] = useState({
+    name: "",
+    description: "",
+    buttonName: ""
+  });
+  const [objectList, setObjectList] = useState([
     {
       id: 1,
       title: "Item 1",
@@ -34,7 +39,7 @@ function App() {
       description: "This is the third item",
       buttonText: "Click Me 3!"
     }
-  ]
+  ])
 
 
   const decrement = (amount) => {
@@ -56,6 +61,25 @@ function App() {
     setIsOpen(false);
   }
 
+  const handleSubmit = (e) => {
+    console.log("Form submitted with data:", formData);
+    e.preventDefault();
+    setFormData({
+      name: "",
+      description: "",
+      buttonName: ""
+    })
+    // Don't mutate state directly! Instead, create a new array.
+    setObjectList(prevList => [
+      ...prevList,
+      {
+      title: formData.name,
+      description: formData.description,
+      buttonText: formData.buttonName,
+      id: prevList.length + 1
+      }
+    ]);
+  }
   return (
     <>
       <div>
@@ -77,12 +101,45 @@ function App() {
 
         </div>
         <Button onClick={toggleModal}>Open Modal</Button>
-
+        <form onSubmit={handleSubmit}>
+          <Input
+            label={"Enter item name"}
+            placeholder={"Name..."}
+            id={"name"}
+            defaultValue={formData.name}
+            onChange={e => setFormData(prev => ({
+              ...prev,
+              name: e.target.value
+            }))}></Input>
+          <Input
+            label={"Enter item description"}
+            placeholder={"Description..."}
+            id={"description"}
+            defaultValue={formData.description}
+            onChange={e => setFormData(prev => ({
+              ...prev,
+              description: e.target.value
+            }))
+            }
+          ></Input>
+          <Input
+            label={"Enter button name"}
+            placeholder={"Button name..."}
+            id={"button-name"}
+            defaultValue={formData.buttonName}
+            onChange={e => setFormData(prev => ({
+              ...prev,
+              buttonName: e.target.value
+            }))
+            }
+          ></Input>
+          <Button type='submit'>Save</Button>
+        </form>
         <List objectList={objectList}></List>
       </div>
       <Modal opened={isOpen} toggleModal={toggleModal}>
         <ModalConfirm yes={confirm} decline={decline}></ModalConfirm>
-      {/* <ModalText></ModalText> */}
+        {/* <ModalText></ModalText> */}
       </Modal>
 
       <Semafor></Semafor>
