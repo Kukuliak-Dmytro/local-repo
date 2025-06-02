@@ -3,14 +3,15 @@ import { FaArrowRotateRight } from "react-icons/fa6";
 import { useState } from "react";
 import { motion } from "motion/react"
 import { FaRegTrashAlt } from "react-icons/fa";
+import { useContext } from "react";
+
+import { SemafoforLightContext } from "../../../App";
 import './Semafor.css';
 export default function Semafor() {
     const [rotation, setRotation] = useState(0);
-    const [lightCount, setLightCount] = useState({
-        red: 0,
-        yellow: 0,
-        green: 0
-    }); // [red, yellow, green]
+    const lightContext = useContext(SemafoforLightContext);
+    const [lightCount, setLightCount] = useState(lightContext); // Use context as initial state
+    // [red, yellow, green]
     const resetCount=()=>{
         setLightCount({
             red: 0,

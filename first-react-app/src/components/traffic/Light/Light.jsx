@@ -5,7 +5,7 @@ export function Light({color, rotation, onClick, count}) {
 
     return (
         <motion.div 
-        className="light" 
+        className="Light" 
         style={{ backgroundColor: color }} 
         onClick={onClick}
         animate={{ rotate: -rotation }}
