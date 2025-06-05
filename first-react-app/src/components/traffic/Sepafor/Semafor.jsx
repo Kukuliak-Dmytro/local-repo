@@ -4,7 +4,7 @@ import { useState } from "react";
 import { motion } from "motion/react"
 import { FaRegTrashAlt } from "react-icons/fa";
 import { useContext } from "react";
-
+import { useEffect } from "react";
 import { SemafoforLightContext } from "../../../App";
 import './Semafor.css';
 export default function Semafor() {
@@ -19,6 +19,28 @@ export default function Semafor() {
             green: 0
         });
     }
+    const logEffect=()=>{
+        console.log("UseEffect called");
+    }
+    //THre usages of useEffect
+    // 1. Initial render
+    // 2. When dependencies change
+    // 3. On every render
+
+    // 1. Initial render
+    // useEffect(logEffect, [])
+
+    // 2. When dependencies change
+    // useEffect(logEffect, [lightCount]);
+
+    // 3. On every render
+    // useEffect(logEffect);
+    useEffect(()=>{
+        setTimeout(()=>{
+            console.log("UseEffect called after 1 second");
+        },1000)
+    },[lightCount])
+
     return (
         <motion.div className="semafor" animate={{ rotate: rotation }}>
             <Light
