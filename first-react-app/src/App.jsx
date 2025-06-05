@@ -14,25 +14,20 @@ export const ObjectListContext = createContext(null);
 
 function App() {
   const [objectList, setObjectList] = useState([
-    {
-      id: 1,
-      title: "Item 1",
-      description: "This is the first item",
-      buttonText: "Click Me 1!"
-    },
-    {
-      id: 2,
-      title: "Item 2",
-      description: "This is the second item",
-      buttonText: "Click Me 2!"
-    },
-    {
-      id: 3,
-      title: "Item 3",
-      description: "This is the third item",
-      buttonText: "Click Me 3!"
-    }
+       
   ]);
+  const editObject = (id, newData) => {
+    setObjectList(prevList =>
+      prevList.map(obj =>
+        obj.id === id ? { ...obj, ...newData } : obj
+      )
+    );
+  }
+  const deleteObject = (id) => {
+    setObjectList(prevList => prevList.filter(obj => obj.id !== id));
+    console.log("Deleted object with id:", id);
+  }
+
   const [count, setCount] = useState(0)
   const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => {
@@ -43,6 +38,7 @@ function App() {
     description: "",
     buttonName: ""
   });
+
 
   const [theme, setTheme] = useState('light')
   const decrement = (amount) => {
@@ -78,7 +74,6 @@ function App() {
       {
         title: formData.name,
         description: formData.description,
-        buttonText: formData.buttonName,
         id: prevList.length + 1
       }
     ]);
@@ -89,7 +84,7 @@ function App() {
     document.body.className = theme === 'light' ? 'dark' : 'light';
   }
   return (
-    <ObjectListContext.Provider value={[objectList, setObjectList]}>
+    <ObjectListContext.Provider value={[objectList, setObjectList, editObject, deleteObject]}>
       <SemafoforLightContext.Provider value={{
         red: 0,
         yellow: 0,
@@ -115,7 +110,7 @@ function App() {
               <Button onClick={() => { increment(5) }}>+5</Button>
             </div>
             <Button onClick={toggleModal}>Open Modal</Button>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} style={{ display: "flex", gap: "32px", alignItems:"end", justifyContent:"space-between" }}>
               <Input
                 label={"Enter item name"}
                 placeholder={"Name..."}
@@ -136,17 +131,7 @@ function App() {
                 }))
                 }
               ></Input>
-              <Input
-                label={"Enter button name"}
-                placeholder={"Button name..."}
-                id={"button-name"}
-                value={formData.buttonName}
-                onChange={e => setFormData(prev => ({
-                  ...prev,
-                  buttonName: e.target.value
-                }))
-                }
-              ></Input>
+             
               <Button type='submit'>Save</Button>
             </form>
             <List></List>

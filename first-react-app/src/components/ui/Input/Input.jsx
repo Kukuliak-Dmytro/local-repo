@@ -4,7 +4,7 @@ export default function Input({label, placeholder, id, type='text', defaultValue
     return (
         <div className="input-container">
         <label htmlFor={id}>{label}</label>
-        <input type={type} placeholder={placeholder} id={id} value={defaultValue} onChange={onChange}/>
+        <input type={type} placeholder={placeholder} id={id} value={defaultValue} onChange={onChange} required/>
         </div>
     )
 }
