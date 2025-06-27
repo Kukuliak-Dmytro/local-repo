@@ -11,4 +11,13 @@ export async function register({username, password, fullName}){
 
 }
 
-export function login(){}
+export async function login({username, password}){
+    try{
+        const response = await http.post("/auth/login", {username, password})
+        return response.data
+    }
+    catch(error){
+        console.log(error)
+    }
+
+}

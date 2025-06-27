@@ -1,31 +1,29 @@
-import './Register.css'
-import { register } from '../../services/auth'
+import './Login.css'
+import { login } from '../../services/auth'
 import PageWrapper from '../../layout/PageWrapper/PageWrapper'
 import { useState } from 'react'
 import useFormState from '../../hooks/useFormState'
 import { setAccessToken, setRefreshToken } from '../../utils/jwt'
 import { useNavigate } from 'react-router'
-export default function Register() {
+export default function Login() {
     const navigate = useNavigate()
     const [formData, setFormData, handleChange] = useFormState({
         username:"",
         password:"",
-        fullName:"",
     })
-    const handleRegister =async (e)=>{
+    const handleLogin =async (e)=>{
         e.preventDefault()
-        const {username, password, fullName} = formData
-        const response = await register({username, password, fullName})
-        console.log("User registered successfully")
+        const {username, password} = formData
+        const response = await login({username, password})
+        console.log("User logged in successfully")
         setAccessToken(response.accessToken)
         setRefreshToken(response.refreshToken)
         navigate("/")
     }
     return (
         <PageWrapper>
-            <form className="register-form" onSubmit={handleRegister}>
-                <h1>Register</h1>
-                <input onChange={handleChange} id='fullName' name='fullName' type="text" placeholder="Full anme"  value={formData.fullName}/>
+            <form className="login-form" onSubmit={handleLogin}>
+                <h1>Login </h1>
                 <input onChange={handleChange} id='username' name='username' type="text" placeholder="Nickname" value={formData.username}/>
                 <input onChange={handleChange} id='password' name='password' type="password" placeholder="Password" value={formData.password}/>
                 <button type="submit">Register</button>
