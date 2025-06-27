@@ -1,0 +1,199 @@
+[
+  {
+    "id": 1,
+    "username": "alice",
+    "password": "$2a$10$demoHashForAlice",
+    "fullName": "Alice Smith",
+    "phone": "+1234567890",
+    "age": 25,
+    "friends": [
+      {
+        "id": 2,
+        "fullName": "Bob Brown",
+        "phone": "+1987654321",
+        "age": 27,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Hello from Bob!",
+            "comments": [
+              {
+                "id": 1,
+                "author": "alice",
+                "content": "Nice to see you here!"
+              },
+              {
+                "id": 2,
+                "author": "carol",
+                "content": "Welcome Bob!"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "content": "Bob's second post.",
+            "comments": []
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "fullName": "Carol White",
+        "phone": "+1122334455",
+        "age": 24,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Carol's first post!",
+            "comments": [
+              {
+                "id": 1,
+                "author": "alice",
+                "content": "Great post Carol!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "bob",
+    "password": "$2a$10$demoHashForBob",
+    "fullName": "Bob Brown",
+    "phone": "+1987654321",
+    "age": 27,
+    "friends": [
+      {
+        "id": 1,
+        "fullName": "Alice Smith",
+        "phone": "+1234567890",
+        "age": 25,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Alice's post for Bob.",
+            "comments": [
+              {
+                "id": 1,
+                "author": "bob",
+                "content": "Thanks Alice!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "fullName": "Dave Green",
+        "phone": "+1444555666",
+        "age": 30,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Dave's post for Bob.",
+            "comments": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "username": "carol",
+    "password": "$2a$10$demoHashForCarol",
+    "fullName": "Carol White",
+    "phone": "+1122334455",
+    "age": 24,
+    "friends": [
+      {
+        "id": 1,
+        "fullName": "Alice Smith",
+        "phone": "+1234567890",
+        "age": 25,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Alice's post for Carol.",
+            "comments": [
+              {
+                "id": 1,
+                "author": "carol",
+                "content": "Thank you Alice!"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "fullName": "Eve Black",
+        "phone": "+1555666777",
+        "age": 22,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Eve's post for Carol.",
+            "comments": []
+          },
+          {
+            "id": 2,
+            "content": "Eve's second post for Carol.",
+            "comments": [
+              {
+                "id": 1,
+                "author": "carol",
+                "content": "Nice update!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "username": "dave",
+    "password": "$2a$10$demoHashForDave",
+    "fullName": "Dave Green",
+    "phone": "+1444555666",
+    "age": 30,
+    "friends": [
+      {
+        "id": 2,
+        "fullName": "Bob Brown",
+        "phone": "+1987654321",
+        "age": 27,
+        "posts": [
+          {
+            "id": 1,
+            "content": "Bob's post for Dave.",
+            "comments": [
+              {
+                "id": 1,
+                "author": "dave",
+                "content": "Thanks Bob!"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "username": "eve",
+    "password": "$2a$10$demoHashForEve",
+    "fullName": "Eve Black",
+    "phone": "+1555666777",
+    "age": 22,
+    "friends": []
+  },
+  {
+    "id": 1751036761451,
+    "username": "testuser",
+    "fullName": "Test User",
+    "password": "$2b$10$W3LhWXfNKho9lQKnvOXEauHn31jNn/9xYAf8wbMYL4mIVbd1ueWvK"
+  }
+]

@@ -27,7 +27,7 @@ function App() {
     setFormData({
       title: '',
       content: ''
-    })
+    })  
 
   }
   useEffect(() => {

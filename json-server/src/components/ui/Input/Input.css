@@ -1,0 +1,24 @@
+.input-uneditable{
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    height: 40px;
+}
+
+.input-editable{
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    height: 40px;
+
+}
+textarea.input-uneditable, 
+textarea.input-editable{
+ height: 100px;   
+}

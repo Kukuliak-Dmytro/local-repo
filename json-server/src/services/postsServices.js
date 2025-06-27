@@ -30,3 +30,24 @@ export async function createPost(post) {
         console.log(error)
     }
 }
+
+export async function updatePost(id, post) {
+    try{
+        const response = await axios.put(`${baseUrl}/posts/${id}`, post)
+        console.log(response.data)
+        return response.data
+    }
+    catch(error){
+        console.log(error)
+    }
+}
+export async function deletePost(id) {
+    try{
+        const response = await axios.delete(`${baseUrl}/posts/${id}`)
+        console.log(response.data)
+        return response.data
+    }
+    catch(error){
+        console.error(error)
+    }
+}

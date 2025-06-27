@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "type": "public",
+    "title": "Welcome Resource",
+    "content": "This is a public resource."
+  },
+  {
+    "id": 2,
+    "type": "private",
+    "title": "Secret Resource",
+    "content": "This is a private resource only for authenticated users."
+  }
+] 

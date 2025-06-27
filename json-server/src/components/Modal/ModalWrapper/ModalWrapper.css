@@ -1,0 +1,18 @@
+.modal-wrapper{
+    min-width: 400px;
+    min-height: 200px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}

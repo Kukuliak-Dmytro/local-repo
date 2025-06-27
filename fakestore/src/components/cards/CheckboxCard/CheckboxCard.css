@@ -1,0 +1,17 @@
+.checkbox-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px;
+    border-radius: 8px;
+    background-color: lightgray;
+    cursor:pointer;
+    color: black;
+    &:hover{
+        scale:1.05
+    }
+    &:active{
+        scale:0.95;
+    }
+}
