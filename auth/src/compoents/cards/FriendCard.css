@@ -1,0 +1,53 @@
+.friend-card {
+  background: #23272f;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 500px;
+  color: #fff;
+}
+.friend-info {
+  border-bottom: 1px solid #444;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+.friend-info h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.6em;
+}
+.friend-posts h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+.friend-post {
+  background: #2c313a;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+.post-content {
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.post-comments h4 {
+  margin: 0 0 6px 0;
+  font-size: 1em;
+}
+.comment {
+  margin-left: 10px;
+  margin-bottom: 4px;
+  padding: 4px 0;
+}
+.comment-author {
+  font-weight: bold;
+  color: #7ecfff;
+}
+.comment-content {
+  color: #e0e0e0;
+}
+.no-comments, .no-posts {
+  color: #aaa;
+  font-style: italic;
+  margin-left: 10px;
+} 

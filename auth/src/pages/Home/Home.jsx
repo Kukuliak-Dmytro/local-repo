@@ -17,6 +17,7 @@ export default function Home(){
             <h1>Home</h1>
             <span style={{display:"flex", gap:"10px"}}>
                 <Link to="/profile">Profile</Link>
+                <Link to="/friends">Friends</Link>
                 <button onClick={handleLogout}>Logout</button>
             </span>
         </PageWrapper>
