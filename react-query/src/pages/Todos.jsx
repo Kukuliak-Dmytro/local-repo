@@ -4,7 +4,7 @@ import Button from "../components/ui/Button";
 import PageWrapper from "../layouts/PageWrapper";
 import { getTodos } from "../services/todos";
 import useFormState from "../hooks/useFormState";
-import { createTodo } from "../services/todos";
+import useTodos from "../hooks/useTodos";
 import TodoCard from "../components/cards/TodoCard";
 import { useQuery } from "@tanstack/react-query";
 export default function TodosPage() {
@@ -13,23 +13,19 @@ export default function TodosPage() {
         "title": "",
         "description": ""
     })
+    const {createTodoMutation} = useTodos()
     const query = useQuery
         ({
-            queryKey: ['todos'],
+            queryKey: ['getTodos'],
             queryFn: getTodos,
             staleTime: 1000 * 60 * 5,
         })
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        try {
-            const newTodo = await createTodo(formData)
-            setFormData({ title: "", description: "" })
-            alert("Todo created successfully")
-        }
-        catch (e) {
-            alert(e.message)
-        }
+        createTodoMutation(formData)
+        setFormData({ title: "", description: "" })
+        alert("Todo created successfully")
     }
     return (
         <PageWrapper className="flex flex-col gap-16">
