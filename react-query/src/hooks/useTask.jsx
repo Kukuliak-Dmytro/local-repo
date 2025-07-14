@@ -29,7 +29,7 @@ export default function useTask(Todo, tasks, setTasks, setFormData) {
     })
     const { mutate: toggleTaskMutation } = useMutation({
         mutationKey: ['toggleTask', Todo.id],
-        mutationFn: async (taskId, completed) => {
+        mutationFn: async ({ taskId, completed }) => {
                 try {
                     setTasks(tasks.map((task)=>task.id === taskId ? {...task, completed: !task.completed} : task))
                     if (!taskId) {
@@ -56,7 +56,7 @@ export default function useTask(Todo, tasks, setTasks, setFormData) {
         mutationFn: async (taskId, content) => {
             try{
                 setTasks(tasks.map((task)=>task.id === taskId ? {...task, content} : task))
-                const response = await http.put(`/tasks/${taskId}`, { content })
+                const response = await http.patch(`/tasks/${taskId}`, { content })
                 console.log("Task updated successfully")
                 console.log(response.data)
                 return response.data

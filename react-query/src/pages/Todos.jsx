@@ -25,7 +25,6 @@ export default function TodosPage() {
         e.preventDefault()
         createTodoMutation(formData)
         setFormData({ title: "", description: "" })
-        alert("Todo created successfully")
     }
     return (
         <PageWrapper className="flex flex-col gap-16">

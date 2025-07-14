@@ -1,0 +1,189 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "The Great Gatsby",
+      "authorId": 1,
+      "categoryId": 1,
+      "languageId": 1
+    },
+    {
+      "id": 2,
+      "title": "To Kill a Mockingbird",
+      "authorId": 2,
+      "categoryId": 2,
+      "languageId": 1
+    },
+    {
+      "id": 3,
+      "title": "1984",
+      "authorId": 3,
+      "categoryId": 3,
+      "languageId": 1
+    },
+    {
+      "id": 4,
+      "title": "Pride and Prejudice",
+      "authorId": 4,
+      "categoryId": 4,
+      "languageId": 1
+    },
+    {
+      "id": 5,
+      "title": "War and Peace",
+      "authorId": 5,
+      "categoryId": 5,
+      "languageId": 2
+    },
+    {
+      "id": 6,
+      "title": "Anna Karenina",
+      "authorId": 5,
+      "categoryId": 4,
+      "languageId": 2
+    },
+    {
+      "id": 7,
+      "title": "Crime and Punishment",
+      "authorId": 5,
+      "categoryId": 6,
+      "languageId": 2
+    },
+    {
+      "id": 8,
+      "title": "The Brothers Karamazov",
+      "authorId": 5,
+      "categoryId": 6,
+      "languageId": 2
+    },
+    {
+      "id": 9,
+      "title": "Emma",
+      "authorId": 4,
+      "categoryId": 4,
+      "languageId": 1
+    },
+    {
+      "id": 10,
+      "title": "Sense and Sensibility",
+      "authorId": 4,
+      "categoryId": 4,
+      "languageId": 1
+    },
+    {
+      "id": 11,
+      "title": "Animal Farm",
+      "authorId": 3,
+      "categoryId": 3,
+      "languageId": 1
+    },
+    {
+      "id": 12,
+      "title": "Go Set a Watchman",
+      "authorId": 2,
+      "categoryId": 2,
+      "languageId": 1
+    },
+    {
+      "id": 13,
+      "title": "Tender Is the Night",
+      "authorId": 1,
+      "categoryId": 1,
+      "languageId": 1
+    },
+    {
+      "id": 14,
+      "title": "This Side of Paradise",
+      "authorId": 1,
+      "categoryId": 1,
+      "languageId": 1
+    },
+    {
+      "id": 15,
+      "title": "Down and Out in Paris and London",
+      "authorId": 3,
+      "categoryId": 7,
+      "languageId": 1
+    },
+    {
+      "id": 16,
+      "title": "Test",
+      "authorId": 1,
+      "categoryId": 1,
+      "languageId": 1
+    },
+    {
+      "id": 17,
+      "title": "Test",
+      "authorId": 1,
+      "categoryId": 1,
+      "languageId": 1
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "F. Scott Fitzgerald"
+    },
+    {
+      "id": 2,
+      "name": "Harper Lee"
+    },
+    {
+      "id": 3,
+      "name": "George Orwell"
+    },
+    {
+      "id": 4,
+      "name": "Jane Austen"
+    },
+    {
+      "id": 5,
+      "name": "Leo Tolstoy"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "American Classic"
+    },
+    {
+      "id": 2,
+      "name": "Southern Gothic"
+    },
+    {
+      "id": 3,
+      "name": "Dystopian"
+    },
+    {
+      "id": 4,
+      "name": "Romance"
+    },
+    {
+      "id": 5,
+      "name": "Historical"
+    },
+    {
+      "id": 6,
+      "name": "Philosophical"
+    },
+    {
+      "id": 7,
+      "name": "Memoir"
+    },
+    {
+      "id": 8,
+      "name": "Satire"
+    }
+  ],
+  "languages": [
+    {
+      "id": 1,
+      "name": "English"
+    },
+    {
+      "id": 2,
+      "name": "Ukranian"
+    }
+  ]
+}

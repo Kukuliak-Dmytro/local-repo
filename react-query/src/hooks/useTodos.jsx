@@ -24,6 +24,26 @@ const {mutate:createTodoMutation} = useMutation({
         queryClient.invalidateQueries({queryKey:['getTodos']})
         return data
     }
-    })
-    return {createTodoMutation}
+    }
+)
+const {mutate:deleteTodoMutation}=useMutation({
+    mutationKey:['deleteTodo'],
+    mutationFn:async(todoId)=>{
+        try{
+            const response = await http.delete(`/todos/${todoId}`)
+            console.log("Todo deleted successfully")
+            console.log(response.data)
+            return response.data
+        }
+        catch(e){
+            console.error(e.message)
+        }
+    },
+    onSuccess:(data)=>{
+        queryClient.invalidateQueries({queryKey:['getTodos']})
+        return data
+    }
+    }
+)
+    return {createTodoMutation, deleteTodoMutation}
 }
