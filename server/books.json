@@ -1,17 +1,10 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "The Great Gatsby",
-      "authorId": 1,
-      "categoryId": 1,
-      "languageId": 1
-    },
-    {
       "id": 2,
-      "title": "To Kill a Mockingbird",
+      "title": "Test update",
       "authorId": 2,
-      "categoryId": 2,
+      "categoryId": 1,
       "languageId": 1
     },
     {
@@ -27,34 +20,6 @@
       "authorId": 4,
       "categoryId": 4,
       "languageId": 1
-    },
-    {
-      "id": 5,
-      "title": "War and Peace",
-      "authorId": 5,
-      "categoryId": 5,
-      "languageId": 2
-    },
-    {
-      "id": 6,
-      "title": "Anna Karenina",
-      "authorId": 5,
-      "categoryId": 4,
-      "languageId": 2
-    },
-    {
-      "id": 7,
-      "title": "Crime and Punishment",
-      "authorId": 5,
-      "categoryId": 6,
-      "languageId": 2
-    },
-    {
-      "id": 8,
-      "title": "The Brothers Karamazov",
-      "authorId": 5,
-      "categoryId": 6,
-      "languageId": 2
     },
     {
       "id": 9,
@@ -136,10 +101,6 @@
     {
       "id": 4,
       "name": "Jane Austen"
-    },
-    {
-      "id": 5,
-      "name": "Leo Tolstoy"
     }
   ],
   "categories": [

@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "start": "node app.mjs",
+    "dev": "nodemon app.mjs"
+  },
   "dependencies": {
     "express": "^5.1.0"
   },

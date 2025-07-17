@@ -1,4 +1,4 @@
-import { getBooks, getBookById, createBook } from '../service/books.js'
+import { getBooks, getBookById, createBook, updateBook, deleteBook } from '../service/books.js'
 
 async function getBooksHandler(req, res){
     try{
@@ -32,4 +32,29 @@ async function createBookHandler(req, res){
         res.status(500).json({error: error.message})
     }
 }
-export {getBooksHandler, getBookByIdHandler, createBookHandler}
+async function updateBookHandler(req, res){
+    try{
+        const {id} = req.params
+        const {title, authorId, categoryId, languageId} = req.body
+        if (!title && !authorId && !categoryId && !languageId){
+            res.status(400).json({error: 'At least one field must be provided'})
+            return}
+        const updatedBook = await updateBook(id, {title, authorId, categoryId, languageId})
+        res.json(updatedBook)
+    }
+    catch(error){
+        res.status(500).json({error: error.message})
+    }
+}
+
+async function deleteBookHandler(req, res){
+    try{
+        const {id} = req.params
+        const deletedBook = await deleteBook(id)
+        res.json(deletedBook)
+    }
+    catch(error){
+        res.status(500).json({error: error.message})
+    }
+}
+export {getBooksHandler, getBookByIdHandler, createBookHandler, updateBookHandler, deleteBookHandler}
