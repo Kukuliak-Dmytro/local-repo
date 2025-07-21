@@ -23,8 +23,8 @@ const genresController ={
     },
     createGenre:async(req,res)=>{
         try{
-            const {name}=req.body
-            const genre=await createGenreOperation(name)
+            const {name,description}=req.body
+            const genre=await createGenreOperation(name,description)
             res.status(201).json(genre)
         }catch(error){
             res.status(500).json({message:error.message})
@@ -34,7 +34,8 @@ const genresController ={
         try{
             const {id}=req.params
             const {name}=req.body
-            const genre=await updateGenreOperation(id,name)
+            const {description}=req.body
+            const genre=await updateGenreOperation(id,name,description)
             res.status(200).json(genre)
         }catch(error){
             res.status(500).json({message:error.message})
