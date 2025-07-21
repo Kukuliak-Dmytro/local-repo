@@ -1,0 +1,232 @@
+[
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb3"
+    },
+    "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+    "year": 2003,
+    "director": "Gore Verbinski",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea7"
+      },
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea8"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28ea9"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eb0"
+      }
+    ],
+    "rating": 8.0,
+    "description": "A swashbuckling adventure about a pirate who teams up with a blacksmith to rescue a governor's daughter from cursed pirates."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb4"
+    },
+    "title": "Lost in Translation",
+    "year": 2003,
+    "director": "Sofia Coppola",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea8"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eaa"
+      }
+    ],
+    "rating": 7.7,
+    "description": "A faded movie star and a neglected young woman form an unlikely bond after crossing paths in Tokyo."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb5"
+    },
+    "title": "Fight Club",
+    "year": 1999,
+    "director": "David Fincher",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea9"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eaa"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eaf"
+      }
+    ],
+    "rating": 8.8,
+    "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much more."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb6"
+    },
+    "title": "Mad Max: Fury Road",
+    "year": 2015,
+    "director": "George Miller",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28eaa"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28ea9"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eac"
+      }
+    ],
+    "rating": 8.1,
+    "description": "A woman rebels against a tyrannical ruler in postapocalyptic Australia in search for her homeland with the help of a group of female prisoners."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb7"
+    },
+    "title": "Deadpool",
+    "year": 2016,
+    "director": "Tim Miller",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28eab"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28ea9"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eab"
+      }
+    ],
+    "rating": 8.0,
+    "description": "A wisecracking mercenary gets experimented on and becomes immortal but ugly, and sets out to track down the man who ruined his looks."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb8"
+    },
+    "title": "The Matrix",
+    "year": 1999,
+    "director": "Lana and Lilly Wachowski",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea9"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eac"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28ea9"
+      }
+    ],
+    "rating": 8.7,
+    "description": "A computer programmer discovers that reality as he knows it is a simulation created by machines, and joins a rebellion to break free."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eb9"
+    },
+    "title": "Titanic",
+    "year": 1997,
+    "director": "James Cameron",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea9"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eae"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eaa"
+      }
+    ],
+    "rating": 7.9,
+    "description": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28eba"
+    },
+    "title": "The Shining",
+    "year": 1980,
+    "director": "Stanley Kubrick",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea7"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28ead"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eaf"
+      }
+    ],
+    "rating": 8.4,
+    "description": "A family heads to an isolated hotel for the winter where an evil and spiritual presence influences the father into violence."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28ebb"
+    },
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "year": 2001,
+    "director": "Peter Jackson",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea7"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eb0"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eaa"
+      }
+    ],
+    "rating": 8.8,
+    "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth."
+  },
+  {
+    "_id": {
+      "$oid": "687a6c220349fc17cdc28ebc"
+    },
+    "title": "Toy Story",
+    "year": 1995,
+    "director": "John Lasseter",
+    "actors": [
+      {
+        "$oid": "687a6a7b0349fc17cdc28ea7"
+      }
+    ],
+    "genres": [
+      {
+        "$oid": "687a6b110349fc17cdc28eb2"
+      },
+      {
+        "$oid": "687a6b110349fc17cdc28eab"
+      }
+    ],
+    "rating": 8.3,
+    "description": "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."
+  }
+] 

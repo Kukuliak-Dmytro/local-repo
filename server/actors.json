@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea7"
+    },
+    "name": "Tom Hanks",
+    "birthYear": 1956,
+    "nationality": "American",
+    "famousFor": ["Forrest Gump", "Cast Away", "Saving Private Ryan"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea8"
+    },
+    "name": "Meryl Streep",
+    "birthYear": 1949,
+    "nationality": "American",
+    "famousFor": ["The Devil Wears Prada", "Sophie's Choice", "Mamma Mia!"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea9"
+    },
+    "name": "Leonardo DiCaprio",
+    "birthYear": 1974,
+    "nationality": "American",
+    "famousFor": ["Titanic", "The Revenant", "Inception"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28eaa"
+    },
+    "name": "Emma Watson",
+    "birthYear": 1990,
+    "nationality": "British",
+    "famousFor": ["Harry Potter series", "Beauty and the Beast", "Little Women"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28eab"
+    },
+    "name": "Denzel Washington",
+    "birthYear": 1954,
+    "nationality": "American",
+    "famousFor": ["Training Day", "Glory", "Malcolm X"]
+  }
+] 

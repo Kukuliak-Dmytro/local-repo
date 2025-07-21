@@ -1,0 +1,47 @@
+[
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea7"
+    },
+    "name": "Johnny Depp",
+    "birthYear": 1963,
+    "nationality": "American",
+    "famousFor": ["Pirates of the Caribbean", "Edward Scissorhands", "Sweeney Todd"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea8"
+    },
+    "name": "Scarlett Johansson",
+    "birthYear": 1984,
+    "nationality": "American",
+    "famousFor": ["Black Widow", "Lost in Translation", "Marriage Story"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28ea9"
+    },
+    "name": "Brad Pitt",
+    "birthYear": 1963,
+    "nationality": "American",
+    "famousFor": ["Fight Club", "Ocean's Eleven", "Once Upon a Time in Hollywood"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28eaa"
+    },
+    "name": "Charlize Theron",
+    "birthYear": 1975,
+    "nationality": "South African",
+    "famousFor": ["Mad Max: Fury Road", "Monster", "Atomic Blonde"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6a7b0349fc17cdc28eab"
+    },
+    "name": "Ryan Reynolds",
+    "birthYear": 1976,
+    "nationality": "Canadian",
+    "famousFor": ["Deadpool", "The Proposal", "Free Guy"]
+  }
+] 

@@ -1,0 +1,82 @@
+[
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28ea9"
+    },
+    "name": "Action",
+    "description": "Fast-paced films with exciting sequences, stunts, and physical challenges",
+    "popularExamples": ["Die Hard", "Mad Max: Fury Road", "John Wick"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eaa"
+    },
+    "name": "Drama",
+    "description": "Serious, plot-driven films that focus on character development and emotional themes",
+    "popularExamples": ["The Shawshank Redemption", "Forrest Gump", "The Godfather"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eab"
+    },
+    "name": "Comedy",
+    "description": "Humorous films designed to make audiences laugh through witty dialogue and situations",
+    "popularExamples": ["The Hangover", "Superbad", "Bridesmaids"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eac"
+    },
+    "name": "Science Fiction",
+    "description": "Films featuring futuristic technology, space exploration, and speculative concepts",
+    "popularExamples": ["Blade Runner", "The Matrix", "Interstellar"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28ead"
+    },
+    "name": "Horror",
+    "description": "Films designed to frighten and unsettle audiences through suspense and supernatural elements",
+    "popularExamples": ["The Shining", "A Nightmare on Elm Street", "Get Out"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eae"
+    },
+    "name": "Romance",
+    "description": "Films that focus on love stories and romantic relationships between characters",
+    "popularExamples": ["Titanic", "The Notebook", "La La Land"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eaf"
+    },
+    "name": "Thriller",
+    "description": "Suspenseful films that create tension and excitement through plot twists and danger",
+    "popularExamples": ["Gone Girl", "The Silence of the Lambs", "Inception"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eb0"
+    },
+    "name": "Fantasy",
+    "description": "Films featuring magical worlds, supernatural creatures, and imaginative settings",
+    "popularExamples": ["The Lord of the Rings", "Harry Potter", "The Chronicles of Narnia"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eb1"
+    },
+    "name": "Documentary",
+    "description": "Non-fiction films that document real events, people, or subjects",
+    "popularExamples": ["Planet Earth", "March of the Penguins", "An Inconvenient Truth"]
+  },
+  {
+    "_id": {
+      "$oid": "687a6b110349fc17cdc28eb2"
+    },
+    "name": "Animation",
+    "description": "Films created using animated techniques, including traditional, computer, and stop-motion",
+    "popularExamples": ["Toy Story", "Spirited Away", "The Lion King"]
+  }
+] 
