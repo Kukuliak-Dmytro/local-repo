@@ -1,0 +1,77 @@
+[
+  {
+    "_id": 1,
+    "name": "Science Fiction",
+    "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."
+  },
+  {
+    "_id": 2,
+    "name": "Fantasy",
+    "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."
+  },
+  {
+    "_id": 3,
+    "name": "Mystery",
+    "description": "Fiction involving the solving of a crime or puzzle, often featuring detectives or amateur sleuths."
+  },
+  {
+    "_id": 4,
+    "name": "Romance",
+    "description": "Fiction focusing on romantic relationships and emotional connections between characters."
+  },
+  {
+    "_id": 5,
+    "name": "Thriller",
+    "description": "Fiction designed to create suspense, excitement, and tension, often involving danger and high stakes."
+  },
+  {
+    "_id": 6,
+    "name": "Horror",
+    "description": "Fiction intended to frighten, scare, or startle readers through supernatural or psychological elements."
+  },
+  {
+    "_id": 7,
+    "name": "Historical Fiction",
+    "description": "Fiction set in the past, often featuring real historical events, figures, or periods."
+  },
+  {
+    "_id": 8,
+    "name": "Adventure",
+    "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."
+  },
+  {
+    "_id": 9,
+    "name": "Comedy",
+    "description": "Fiction intended to be humorous, often featuring witty dialogue and amusing situations."
+  },
+  {
+    "_id": 10,
+    "name": "Drama",
+    "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."
+  },
+  {
+    "_id": 11,
+    "name": "Action",
+    "description": "Fiction featuring fast-paced sequences, physical confrontations, and high-energy scenes."
+  },
+  {
+    "_id": 12,
+    "name": "Biography",
+    "description": "Non-fiction accounts of real people's lives, written by others or as autobiographies."
+  },
+  {
+    "_id": 13,
+    "name": "Self-Help",
+    "description": "Non-fiction books intended to help readers improve themselves or solve personal problems."
+  },
+  {
+    "_id": 14,
+    "name": "Philosophy",
+    "description": "Non-fiction exploring fundamental questions about existence, knowledge, values, and reality."
+  },
+  {
+    "_id": 15,
+    "name": "Poetry",
+    "description": "Literary works that use aesthetic and rhythmic qualities of language to evoke meanings."
+  }
+] 

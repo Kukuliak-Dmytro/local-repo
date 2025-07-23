@@ -1,0 +1,167 @@
+[
+  {
+    "_id": 1,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "publishedYear": 1937,
+    "pages": 310,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}],
+    "rating": 4.5,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 2,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "publishedYear": 1965,
+    "pages": 688,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}],
+    "rating": 4.8,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 3,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "publishedYear": 1925,
+    "pages": 180,
+    "genre": [{"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 4.2,
+    "status": "completed",
+    "isFavorite": false
+  },
+  {
+    "_id": 4,
+    "title": "1984",
+    "author": "George Orwell",
+    "publishedYear": 1949,
+    "pages": 328,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 5, "name": "Thriller", "description": "Fiction designed to create suspense, excitement, and tension, often involving danger and high stakes."}],
+    "rating": 4.6,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 5,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "publishedYear": 1813,
+    "pages": 432,
+    "genre": [{"id": 4, "name": "Romance", "description": "Fiction focusing on romantic relationships and emotional connections between characters."}, {"id": 7, "name": "Historical Fiction", "description": "Fiction set in the past, often featuring real historical events, figures, or periods."}],
+    "rating": 4.3,
+    "status": "reading",
+    "isFavorite": false
+  },
+  {
+    "_id": 6,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "publishedYear": 1954,
+    "pages": 1216,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 4.9,
+    "status": "planned",
+    "isFavorite": true
+  },
+  {
+    "_id": 7,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "publishedYear": 1960,
+    "pages": 281,
+    "genre": [{"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 4.7,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 8,
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "publishedYear": 1951,
+    "pages": 214,
+    "genre": [{"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 3.8,
+    "status": "completed",
+    "isFavorite": false
+  },
+  {
+    "_id": 9,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "publishedYear": 1932,
+    "pages": 288,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}],
+    "rating": 4.4,
+    "status": "reading",
+    "isFavorite": false
+  },
+  {
+    "_id": 10,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "publishedYear": 1988,
+    "pages": 208,
+    "genre": [{"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}, {"id": 14, "name": "Philosophy", "description": "Non-fiction exploring fundamental questions about existence, knowledge, values, and reality."}],
+    "rating": 4.1,
+    "status": "completed",
+    "isFavorite": false
+  },
+  {
+    "_id": 11,
+    "title": "Gone Girl",
+    "author": "Gillian Flynn",
+    "publishedYear": 2012,
+    "pages": 415,
+    "genre": [{"id": 3, "name": "Mystery", "description": "Fiction involving the solving of a crime or puzzle, often featuring detectives or amateur sleuths."}, {"id": 5, "name": "Thriller", "description": "Fiction designed to create suspense, excitement, and tension, often involving danger and high stakes."}],
+    "rating": 4.2,
+    "status": "planned",
+    "isFavorite": false
+  },
+  {
+    "_id": 12,
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "publishedYear": 2006,
+    "pages": 287,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 4.0,
+    "status": "reading",
+    "isFavorite": false
+  },
+  {
+    "_id": 13,
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "publishedYear": 2019,
+    "pages": 352,
+    "genre": [{"id": 3, "name": "Mystery", "description": "Fiction involving the solving of a crime or puzzle, often featuring detectives or amateur sleuths."}, {"id": 5, "name": "Thriller", "description": "Fiction designed to create suspense, excitement, and tension, often involving danger and high stakes."}],
+    "rating": 4.3,
+    "status": "planned",
+    "isFavorite": false
+  },
+  {
+    "_id": 14,
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "publishedYear": 2018,
+    "pages": 320,
+    "genre": [{"id": 13, "name": "Self-Help", "description": "Non-fiction books intended to help readers improve themselves or solve personal problems."}],
+    "rating": 4.6,
+    "status": "reading",
+    "isFavorite": true
+  },
+  {
+    "_id": 15,
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "publishedYear": 2020,
+    "pages": 288,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 4.2,
+    "status": "planned",
+    "isFavorite": false
+  }
+] 

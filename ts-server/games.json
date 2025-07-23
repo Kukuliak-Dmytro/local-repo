@@ -1,0 +1,152 @@
+[
+  {
+    "_id": 1,
+    "title": "The Witcher 3: Wild Hunt",
+    "developer": "CD Projekt Red",
+    "releaseYear": 2015,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 9.3,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 2,
+    "title": "Red Dead Redemption 2",
+    "developer": "Rockstar Games",
+    "releaseYear": 2018,
+    "genre": [{"id": 11, "name": "Action", "description": "Fiction featuring fast-paced sequences, physical confrontations, and high-energy scenes."}, {"id": 7, "name": "Historical Fiction", "description": "Fiction set in the past, often featuring real historical events, figures, or periods."}],
+    "rating": 9.2,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 3,
+    "title": "The Last of Us",
+    "developer": "Naughty Dog",
+    "releaseYear": 2013,
+    "genre": [{"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}, {"id": 6, "name": "Horror", "description": "Fiction intended to frighten, scare, or startle readers through supernatural or psychological elements."}],
+    "rating": 9.1,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 4,
+    "title": "God of War",
+    "developer": "Santa Monica Studio",
+    "releaseYear": 2018,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 11, "name": "Action", "description": "Fiction featuring fast-paced sequences, physical confrontations, and high-energy scenes."}],
+    "rating": 9.0,
+    "status": "playing",
+    "isFavorite": false
+  },
+  {
+    "_id": 5,
+    "title": "Cyberpunk 2077",
+    "developer": "CD Projekt Red",
+    "releaseYear": 2020,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 11, "name": "Action", "description": "Fiction featuring fast-paced sequences, physical confrontations, and high-energy scenes."}],
+    "rating": 7.8,
+    "status": "playing",
+    "isFavorite": false
+  },
+  {
+    "_id": 6,
+    "title": "Elden Ring",
+    "developer": "FromSoftware",
+    "releaseYear": 2022,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 9.5,
+    "status": "planned",
+    "isFavorite": true
+  },
+  {
+    "_id": 7,
+    "title": "Grand Theft Auto V",
+    "developer": "Rockstar Games",
+    "releaseYear": 2013,
+    "genre": [{"id": 11, "name": "Action", "description": "Fiction featuring fast-paced sequences, physical confrontations, and high-energy scenes."}, {"id": 9, "name": "Comedy", "description": "Fiction intended to be humorous, often featuring witty dialogue and amusing situations."}],
+    "rating": 8.9,
+    "status": "completed",
+    "isFavorite": false
+  },
+  {
+    "_id": 8,
+    "title": "Portal 2",
+    "developer": "Valve",
+    "releaseYear": 2011,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 9, "name": "Comedy", "description": "Fiction intended to be humorous, often featuring witty dialogue and amusing situations."}],
+    "rating": 9.0,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 9,
+    "title": "Mass Effect 2",
+    "developer": "BioWare",
+    "releaseYear": 2010,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 9.1,
+    "status": "completed",
+    "isFavorite": true
+  },
+  {
+    "_id": 10,
+    "title": "Baldur's Gate 3",
+    "developer": "Larian Studios",
+    "releaseYear": 2023,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 9.6,
+    "status": "playing",
+    "isFavorite": true
+  },
+  {
+    "_id": 11,
+    "title": "Disco Elysium",
+    "developer": "ZA/UM",
+    "releaseYear": 2019,
+    "genre": [{"id": 3, "name": "Mystery", "description": "Fiction involving the solving of a crime or puzzle, often featuring detectives or amateur sleuths."}, {"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 9.2,
+    "status": "planned",
+    "isFavorite": false
+  },
+  {
+    "_id": 12,
+    "title": "Hollow Knight",
+    "developer": "Team Cherry",
+    "releaseYear": 2017,
+    "genre": [{"id": 2, "name": "Fantasy", "description": "Fiction involving magical and supernatural elements, often set in imaginary worlds with mythical creatures."}, {"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}],
+    "rating": 8.8,
+    "status": "completed",
+    "isFavorite": false
+  },
+  {
+    "_id": 13,
+    "title": "Stardew Valley",
+    "developer": "ConcernedApe",
+    "releaseYear": 2016,
+    "genre": [{"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}, {"id": 4, "name": "Romance", "description": "Fiction focusing on romantic relationships and emotional connections between characters."}],
+    "rating": 8.7,
+    "status": "playing",
+    "isFavorite": false
+  },
+  {
+    "_id": 14,
+    "title": "Outer Wilds",
+    "developer": "Mobius Digital",
+    "releaseYear": 2019,
+    "genre": [{"id": 1, "name": "Science Fiction", "description": "Fiction dealing with futuristic concepts, advanced technology, space exploration, time travel, and extraterrestrial life."}, {"id": 3, "name": "Mystery", "description": "Fiction involving the solving of a crime or puzzle, often featuring detectives or amateur sleuths."}],
+    "rating": 9.0,
+    "status": "planned",
+    "isFavorite": false
+  },
+  {
+    "_id": 15,
+    "title": "Celeste",
+    "developer": "Matt Makes Games",
+    "releaseYear": 2018,
+    "genre": [{"id": 8, "name": "Adventure", "description": "Fiction involving exciting journeys, quests, or expeditions with action and discovery."}, {"id": 10, "name": "Drama", "description": "Fiction focusing on character development and emotional depth, often dealing with serious themes."}],
+    "rating": 8.9,
+    "status": "completed",
+    "isFavorite": true
+  }
+] 
