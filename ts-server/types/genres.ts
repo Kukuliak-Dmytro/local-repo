@@ -1,8 +1,7 @@
 import { ObjectId } from "mongodb";
 
 export default interface Genre {
-    _id: ObjectId;
+    _id: number;
     name: string;
     description: string;
-
 }

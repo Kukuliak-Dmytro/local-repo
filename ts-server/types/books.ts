@@ -1,7 +1,7 @@
 import Genre from "./genres";
-import { ObjectId } from "mongodb";
+
 export interface Book {
-    _id: ObjectId;
+    _id: number;
     title: string;
     author: string;
     publishedYear: number;

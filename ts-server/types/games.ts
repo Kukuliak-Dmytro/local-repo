@@ -1,7 +1,7 @@
 import Genre from "./genres";
-import { ObjectId } from "mongodb";
+
 export default interface Game {
-    _id: ObjectId;
+    _id: number;
     title: string;
     developer: string;
     releaseYear: number;
