@@ -16,7 +16,7 @@
   },
   "include": [
     "**/*.ts"
-  ],
+, "populate-dishes.js"  ],
   "exclude": [
     "node_modules",
     "dist"
