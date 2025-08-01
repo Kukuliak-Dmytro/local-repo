@@ -5,7 +5,8 @@ const router = Router();
 
 router.post("/", dishesController.createDish);
 router.get("/", dishesController.getDishes);
-router.get("/with-ingredients", dishesController.getDishesWithIngredients);
 router.get("/:id", dishesController.getDishById);
+router.put("/:id", dishesController.updateDish);
+router.delete("/:id", dishesController.deleteDish);
 
 export default router;

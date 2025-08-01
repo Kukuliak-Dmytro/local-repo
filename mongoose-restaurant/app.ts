@@ -4,6 +4,7 @@ import { Request, Response } from "express";
 import ingredientsRoutes from "./routes/ingredientsRoutes";
 import dishesRoutes from "./routes/dishesController";
 import categoriesRoutes from "./routes/categories";
+import ordersRoutes from "./routes/orders";
 
 import dotenv from "dotenv";
 import connectDB from "./config/db";
@@ -24,7 +25,7 @@ app.get("/", (req: Request, res: Response) => {
 app.use("/ingredients", ingredientsRoutes);
 app.use("/dishes", dishesRoutes);
 app.use("/categories", categoriesRoutes);
-
+app.use("/orders", ordersRoutes);
 app.listen(parsedEnvs.PORT, () => {
   console.log(`Server is running on port ${parsedEnvs.PORT}`);
 });

@@ -1,4 +1,4 @@
-const requiredEnvs=["MONGODB_CONNECTION_STRING", "PORT"]
+const requiredEnvs=["MONGODB_CONNECTION_STRING", "PORT", "NODE_ENV"]
 const parsedEnvs:Record<string, string>={}
 const validateEnvs=()=>{
     requiredEnvs.forEach(env=>{

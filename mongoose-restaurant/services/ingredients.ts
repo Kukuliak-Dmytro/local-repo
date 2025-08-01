@@ -1,4 +1,5 @@
 import Ingredient from "../models/ingredients";
+import Dish from "../models/dishes";
 import paginate from "../utils/pagination";
 export async function GetAllIngredients(page?:number, itemsPerPage?:number){
     try{
@@ -28,12 +29,17 @@ export async  function CreateIngredient(name:string, price:number){
     }
 }
 
-export async function UpdateIngredient(id:string, name:string, price:number){
+export async function UpdateIngredient(id:string, name:string, price:number, stock?:number){
     try{
+        const updateData: any = { name, price };
+        if (stock !== undefined) {
+            updateData.stock = stock;
+        }
+        
         const updatedIngredient = await Ingredient.findOneAndUpdate(
             { _id: id },
             { 
-                $set: { name, price },
+                $set: updateData,
                 $inc: { __v: 1 }  // Manually increment version
             },
             { 
@@ -49,9 +55,17 @@ export async function UpdateIngredient(id:string, name:string, price:number){
 }
 export async function DeleteIngredient(id:string){
     try{
+        // Check if ingredient is referenced by any dishes
+        const dishesUsingIngredient = await Dish.find({ ingredients: id });
+        
+        if (dishesUsingIngredient.length > 0) {
+            const dishNames = dishesUsingIngredient.map(dish => dish.name).join(', ');
+            throw new Error(`Cannot delete ingredient. It is used by the following dishes: ${dishNames}`);
+        }
+        
         const deletedIngredient=await Ingredient.findByIdAndDelete(id);
         return deletedIngredient;
     }catch(error){
-        throw error;
+        throw error
     }
 }
