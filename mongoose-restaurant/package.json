@@ -1,31 +1,15 @@
 {
-  "name": "mongoose-restaurant",
-  "version": "1.0.0",
-  "description": "A TypeScript Express restaurant app",
-  "main": "dist/app.js",
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/app.js",
-    "dev": "nodemon app.ts",
-    "lint": "eslint .",
-    "watch": "nodemon --watch app.ts"
-  },
-  "dependencies": {
-    "axios": "^1.11.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.1",
-    "express": "^5.1.0",
-    "mongoose": "^8.17.0",
-    "node-ts": "^8.0.6",
-    "nodemon": "^3.1.10"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.32.0",
-    "@types/express": "^4.17.21",
-    "@types/node": "^20.10.0",
-    "eslint": "^9.32.0",
-    "ts-node": "^10.9.1",
-    "typescript": "^5.8.3",
-    "typescript-eslint": "^8.38.0"
-  }
+    "name": "mongoose-restaurant",
+    "version": "1.0.0",
+    "description": "Mongoose Restaurant",
+    "author": "Mongoose Restaurant",
+    "license": "MIT",
+    "scripts": {
+        "start": "docker-compose up -d --build",
+        "remove": "docker-compose down --rmi all",
+        "stop": "docker-compose down",
+        "restart": "docker-compose down && docker-compose up -d --build",
+        "build": "docker-compose build",
+        "rebuild": "npm run remove && npm run start"
+    }
 }
