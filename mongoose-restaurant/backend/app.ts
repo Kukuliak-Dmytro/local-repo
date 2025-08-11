@@ -1,5 +1,6 @@
 import express from "express";
 import { Request, Response } from "express";
+import cors from "cors";
 
 import ingredientsRoutes from "./routes/ingredientsRoutes";
 import dishesRoutes from "./routes/dishesController";
@@ -14,7 +15,7 @@ dotenv.config();
 validateEnvs();
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 connectDB();
 
 

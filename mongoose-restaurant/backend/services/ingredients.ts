@@ -35,7 +35,7 @@ export async function UpdateIngredient(id:string, name:string, price:number, sto
         if (stock !== undefined) {
             updateData.stock = stock;
         }
-        
+        console.log(updateData);
         const updatedIngredient = await Ingredient.findOneAndUpdate(
             { _id: id },
             { 
@@ -47,7 +47,7 @@ export async function UpdateIngredient(id:string, name:string, price:number, sto
                 runValidators: true 
             }
         );
-        
+        console.log(updatedIngredient);
         return updatedIngredient;
         }catch(error){
         throw error;

@@ -5,8 +5,11 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  
 } from "react-router";
-
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ThemeProvider } from "../contexts/ThemeContext";
+import ThemeSwitcher from "src/components/layouts/ThemeSwitcher";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -24,7 +27,9 @@ export const links: Route.LinksFunction = () => [
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
+
   return (
+    
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -42,7 +47,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  const queryClient = new QueryClient();
+  return (
+    <QueryClientProvider client={queryClient}>
+    <ThemeProvider>
+      <Outlet />
+      <ThemeSwitcher />
+    </ThemeProvider>
+    </QueryClientProvider>
+  )
+
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
