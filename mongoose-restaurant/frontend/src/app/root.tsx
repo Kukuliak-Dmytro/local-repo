@@ -7,6 +7,7 @@ import {
   ScrollRestoration,
   
 } from "react-router";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ThemeProvider } from "../contexts/ThemeContext";
 import ThemeSwitcher from "src/components/layouts/ThemeSwitcher";
@@ -53,6 +54,7 @@ export default function App() {
     <ThemeProvider>
       <Outlet />
       <ThemeSwitcher />
+      <ReactQueryDevtools initialIsOpen={false} />
     </ThemeProvider>
     </QueryClientProvider>
   )

@@ -9,7 +9,7 @@ import { useState, useCallback } from "react";
  *
  * The hook will update the correct field based on the input's id or name.
  */
-export default function useFormState<T>(initialState:T) {
+export default function useFormState<T>(initialState:T):[T, React.Dispatch<React.SetStateAction<T>>, (e: React.ChangeEvent<HTMLInputElement>) => void]{
   const [state, setState] = useState(initialState);
 
   const handleChange = useCallback((e:React.ChangeEvent<HTMLInputElement>) => {

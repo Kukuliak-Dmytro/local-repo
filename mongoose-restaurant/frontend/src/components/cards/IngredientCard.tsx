@@ -5,7 +5,7 @@ import { useEditIngredient } from "../../hooks/useIngredients";
 import useFormState from "../../hooks/useFormState";
 export default function IngredientCard({ ingredient }: { ingredient: Ingredient }) {
     const [isEditing, setIsEditing] = useState(false);
-    const [formData, setFormData, handleChange] = useFormState<{name:string, price:number, stock:number}>({name:ingredient.name, price:ingredient.price, stock:ingredient.stock}) as [{name:string, price:number, stock:number}, React.Dispatch<React.SetStateAction<{name:string, price:number, stock:number}>>, (e: React.ChangeEvent<HTMLInputElement>) => void];
+    const [formData, setFormData, handleChange] = useFormState<Ingredient>(ingredient);
     const {mutate:editIngredient} = useEditIngredient();
     const handleSave=(e:React.FormEvent<HTMLFormElement>)=>{
         e.preventDefault();

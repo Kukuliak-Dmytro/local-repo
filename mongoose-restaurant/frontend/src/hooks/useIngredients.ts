@@ -29,4 +29,18 @@ const useEditIngredient = () => {
     });
 };
 
-export  {useIngredients, useEditIngredient};
+const useCreateIngredient=()=>{
+    const queryClient = useQueryClient();
+    return useMutation({
+        mutationFn: async (ingredient:Ingredient):Promise<Ingredient> => {
+            const response = await http.post("/ingredients", {name:ingredient.name, price:ingredient.price, stock:ingredient.stock});
+            return response.data;
+        },
+        onSuccess: () => {
+            console.log("ingredient created");
+            queryClient.invalidateQueries({ queryKey: ["ingredients"] });
+        },
+    });
+}
+
+export  {useIngredients, useEditIngredient, useCreateIngredient};

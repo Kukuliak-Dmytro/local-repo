@@ -20,9 +20,9 @@ export async function GetIngredientById(id:string){
     }
 }
 
-export async  function CreateIngredient(name:string, price:number){
+export async  function CreateIngredient(name:string, price:number, stock:number){
     try{
-        const newIngreditnt= await Ingredient.create({name, price})
+        const newIngreditnt= await Ingredient.create({name, price, stock})
         return newIngreditnt;
     }catch(error){
         throw error;

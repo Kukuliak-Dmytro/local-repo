@@ -28,12 +28,12 @@ const IngredientsController={
         }
     },
     createIngredient:async(req:Request, res:Response)=>{
-        const {name, price}=req.body;
+        const {name, price, stock}=req.body;
         try{
-            if(!name || !price){
-                return res.status(400).json({message:"Name and price are required"});
+            if(!name || !price || !stock){
+                return res.status(400).json({message:"Name, price and stock are required"});
             }
-            const newIngredient=await CreateIngredient(name, price);
+            const newIngredient=await CreateIngredient(name, price, stock);
             res.status(201).json(newIngredient);
         }catch(error:any){
             res.status(500).json({message:defineError(error.message)});
