@@ -10,7 +10,7 @@ export default function Input({isEditing,label, className, width, ...props}:Inpu
         return (
             <div className={`rounded-md flex flex-col justify-start ${width}`}>
                 <label htmlFor={props.id} className="text-xs pl-2">{label}</label>
-                <input className={`${isEditing ? isEditingClasses : ""} ${className} outline-0 disabled rounded-md flex justify-center items-center w-full h-full p-2`} 
+                <input className={`${isEditing ? isEditingClasses : ""} ${className} outline-0 disabled rounded-md flex justify-center items-center w-full pl-2 h-[40px]`} 
                 {...props} />
             </div>
         )

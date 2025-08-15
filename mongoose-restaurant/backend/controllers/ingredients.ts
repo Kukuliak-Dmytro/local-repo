@@ -6,7 +6,9 @@ const IngredientsController={
     getAllIngredients:async(req:Request, res:Response)=>{
         try{
             const {page, limit}=req.query;
-            const ingredients=await GetAllIngredients(page as number|undefined, limit as number|undefined);
+            const pageNumber = page ? parseInt(page as string, 10) : undefined;
+            const limitNumber = limit ? parseInt(limit as string, 10) : undefined;
+            const ingredients=await GetAllIngredients(pageNumber, limitNumber);
             res.status(200).json(ingredients);
         }catch(error:any){
             res.status(500).json({message:defineError(error.message)});

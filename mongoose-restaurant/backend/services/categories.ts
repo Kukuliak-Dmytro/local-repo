@@ -42,12 +42,7 @@ export async function updateCategory(id:string, category: typeof Category.schema
 export async function deleteCategory(id:string){
     try{
         // Check if category is referenced by any dishes
-        const dishesUsingCategory = await Dish.find({ categories: id });
         
-        if (dishesUsingCategory.length > 0) {
-            const dishNames = dishesUsingCategory.map(dish => dish.name).join(', ');
-            throw new Error(`Cannot delete category. It is used by the following dishes: ${dishNames}`);
-        }
         
         const deletedCategory = await Category.findByIdAndDelete(id);
         return ({ message: "Category deleted successfully"});

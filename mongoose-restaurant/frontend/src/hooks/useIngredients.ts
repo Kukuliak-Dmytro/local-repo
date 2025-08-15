@@ -2,12 +2,12 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import http from "../utils/http";
 import type Ingredient from "../types/ingredients";
 
-const useIngredients = () => {
+const useIngredients = (page:number, limit:number) => {
     return useQuery({
-            queryKey: ["ingredients"],
-        queryFn:async ():Promise<{current:number, data:Ingredient[], limit:number, totalPages:number}>  => {
-            const response = await http.get<{current:number, data:Ingredient[], limit:number, totalPages:number}>("/ingredients");
-            // console.log(response.data);
+            queryKey: ["ingredients", page, limit],
+        queryFn:async ():Promise<{currentPage:number, data:Ingredient[], limit:number, totalPages:number}>  => {
+            const response = await http.get<{currentPage:number, data:Ingredient[], limit:number, totalPages:number}>("/ingredients", {params:{page, limit}});
+            console.log(response.data);
             return response.data;
         },
     });

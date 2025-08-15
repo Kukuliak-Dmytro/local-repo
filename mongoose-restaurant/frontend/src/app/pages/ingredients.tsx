@@ -4,8 +4,12 @@ import Input from "src/components/ui/Input";
 import type Ingredient from "../../types/ingredients";
 import { useCreateIngredient } from "../../hooks/useIngredients";
 import useFormState from "src/hooks/useFormState";
+import Pagination from "src/components/layouts/Pagination";
+import { useState } from "react";
 export default function Ingredients() {
-    const {data, isLoading} = useIngredients();
+    const PAGE_LIMIT=10;
+    const [currentPage, setCurrentPage] = useState(1);
+    const {data, isLoading} = useIngredients(currentPage, PAGE_LIMIT);
     const [ingredient, setIngredient, handleChange]=useFormState<Ingredient>({_id:"", name:"", price:1, stock:1, updatedAt:new Date()});
     const {mutate:createIngredient}=useCreateIngredient();
     const handleSubmit=(e:React.FormEvent<HTMLFormElement>)=>{
@@ -30,6 +34,7 @@ export default function Ingredients() {
                     <IngredientCard key={ingredient._id} ingredient={ingredient} />
                 ))}
             </ul>
+            <Pagination totalPages={data.totalPages} currentPage={data.currentPage} setCurrentPage={setCurrentPage} />
         </div>
     )
 }
